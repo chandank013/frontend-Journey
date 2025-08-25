@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #335c67;
+    text-align: center;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vh;
+    width: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.1) ;
+    font-size: 8vmin;
+    color: #9e2a2b;
+    background-color: #fff3b0 ;
+}
+
+#reset {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #041328;
+    color: #fff3b0;
+    border-radius: 1rem;
+    border: none;
+}
+
+#new-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #041328;
+    color: #fff3b0;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 10px;
+}
+
+#msg{
+    color: #fff3b0;
+    font-size: 3vmin;
+}
+
+.msg-container{
+
+    margin-top: 4.5vmin;
+}
+
+.hide{
+    display: none;
+}
+
+
+/* RESPONSIVE STYLES */
+
+@media (max-width: 900px) {
+    .container {
+        height: auto;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .game {
+        height: auto;
+        width: 90vw;
+        gap: 2vmin;
+    }
+
+    .box {
+        height: 22vmin;
+        width: 22vmin;
+        font-size: 10vmin;
+    }
+
+    #reset, #new-btn {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    #msg {
+        font-size: 4vmin;
+    }
+
+    .msg-container {
+        margin-top: 3vmin;
+    }
+}
+
+@media (max-width: 600px) {
+    .game {
+        gap: 2.5vmin;
+    }
+
+    .box {
+        height: 24vmin;
+        width: 24vmin;
+        font-size: 12vmin;
+    }
+
+    #reset, #new-btn {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.2rem;
+    }
+
+    #msg {
+        font-size: 5vmin;
+    }
+}
